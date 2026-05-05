@@ -3,13 +3,13 @@
 import math
 
 # a) Giá trị tuyệt đối của n
-abs_value = lambda n: abs(n)
+ttd = lambda n: abs(n)
 
 # b) Giá trị của n + 15
 plus_15 = lambda n: n + 15
 
 # c) Tích của x và y
-multiply = lambda x, y: x * y
+Tich = lambda x, y: x * y
 
 # d) Kiểm tra n có là bội số của 13 hoặc 19 hay không
 is_multiple_13_19 = lambda n: n % 13 == 0 or n % 19 == 0
@@ -50,7 +50,7 @@ triangle_type = lambda a, b, c: (
 # ==========================
 
 n = int(input("Nhập số nguyên n: "))
-print("a) |n| =", abs_value(n))
+print("a) |n| =", ttd(n))
 print("b) n + 15 =", plus_15(n))
 print("d) Là bội của 13 hoặc 19:", is_multiple_13_19(n))
 print("g) Là số chính phương:", scp(n))
@@ -58,7 +58,7 @@ print("h) Là số nguyên tố:", snt(n))
 
 x = int(input("\nNhập x: "))
 y = int(input("Nhập y: "))
-print("c) x * y =", multiply(x, y))
+print("c) x * y =", Tich(x, y))
 
 r = float(input("\nNhập bán kính hình tròn r: "))
 print("e) Diện tích hình tròn =", DTht(r))
