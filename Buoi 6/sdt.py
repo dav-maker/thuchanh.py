@@ -13,3 +13,9 @@ ket_qua = sorted(list(tat_ca_so - so_da_nhap))
 
 # In kết quả ra màn hình
 print(f"Trong số điện thoại {S} không chứa các ký số: {ket_qua}")
+
+lst = ()
+for x in range (9):
+    lst.append(x ** 3)
+    print (lst)
+
