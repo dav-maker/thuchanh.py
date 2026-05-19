@@ -1,0 +1,28 @@
+
+import math
+
+
+def reverse_number(n):
+    return int(str(n)[::-1])
+
+
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+a = int(input("Nhập a: "))
+b = int(input("Nhập b: "))
+
+count = 0
+
+print("Các số thân thiện:")
+
+for i in range(a, b + 1):
+    rev = reverse_number(i)
+
+    if gcd(i, rev) == 1:
+        print(i, end=" ")
+        count += 1
+
+print("\nSố lượng:", count)
